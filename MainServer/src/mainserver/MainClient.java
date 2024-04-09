@@ -4,10 +4,22 @@
  */
 package mainserver;
 
+import java.io.IOException;
+import java.net.Socket;
+import java.net.UnknownHostException;
+import java.util.logging.Logger;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import mainserver.Client;
+
 /**
  *
- * @author Studente
+ * @author Studenti
  */
 public class MainClient {
-    
+    public static void main(String[] args) {
+    Client c = new Client("Fahim", "blu");
+    c.connetti("127.0.0.1", 2000);
+    c.chiudi();
+    }
 }
